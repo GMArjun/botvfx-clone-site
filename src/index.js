@@ -1,4 +1,3 @@
 import "bootstrap";
+import "./sliders";
 import "./style.scss";
-
-console.log("Hello, World!");
