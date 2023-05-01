@@ -9,44 +9,339 @@
 </head>
 
 <body>
-    <header>
+    <div class="app" data-bs-spy="scroll" data-bs-target="#homenav" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <header class="position-fixed w-100">
+            <div class="container px-5">
+                <nav id="homenav" class="navbar bg-body-tertiary">
+                    <a class="navbar-brand" href="#"><img src="./src/assets/img/Logo.png" alt=""></a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading1">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading2">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading3">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading4">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading5">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="swiper" id="home-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="container px-5 position-relative img-title-container">
+                                <label class="slider-img-title">Slider Title 1</label>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img"
+                                src="https://botvfx.com/wp-content/uploads/2022/07/Boba-Fett-scaled.jpeg"
+                                alt="sliderimage">
+                            <div class="container px-5 position-relative img-title-container">
+                                <label class="slider-img-title">Slider Title 2</label>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/Loki-scaled.jpeg"
+                                alt="sliderimage">
+                            <div class="container px-5 position-relative img-title-container">
+                                <label class="slider-img-title">Slider Title 3</label>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img"
+                                src="https://botvfx.com/wp-content/uploads/2022/07/Dune-2021-scaled.jpeg"
+                                alt="sliderimage">
+                            <div class="container px-5 position-relative img-title-container">
+                                <label class="slider-img-title">Slider Title 4</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination home-slider-pagination"></div>
+                </div>
+            </section>
 
-    </header>
-    <main>
-        <section>
-            <div class="swiper" id="homeslider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img class="slider-img" id="myImage"
-                            src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg" alt="sliderimage">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="slider-img"
-                            src="https://botvfx.com/wp-content/uploads/2022/07/Boba-Fett-scaled.jpeg" alt="sliderimage">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/Loki-scaled.jpeg"
-                            alt="sliderimage">
-                    </div>
-                    <div class="swiper-slide">
-                        <img class="slider-img"
-                            src="https://botvfx.com/wp-content/uploads/2022/07/Dune-2021-scaled.jpeg" alt="sliderimage">
+            <hr>
+
+            <section>
+                <div class="swiper" id="portfolio-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="card-overlay">
+                                <p>Image Text 1</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="card-overlay">
+                                <p>Image Text 1</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="card-overlay">
+                                <p>Image Text 1</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="card-overlay">
+                                <p>Image Text 1</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="card-overlay">
+                                <p>Image Text 1</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="card-overlay">
+                                <p>Image Text 1</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="card-overlay">
+                                <p>Image Text 1</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="card-overlay">
+                                <p>Image Text 1</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="card-overlay">
+                                <p>Image Text 1</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
+                                alt="sliderimage">
+                            <div class="card-overlay">
+                                <p>Image Text 1</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-pagination homeslider-pagination"></div>
+            </section>
+
+            <hr>
+
+            <section>
+                <div class="parallax-container">
+                    <div class="parallax-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ipsum, exercitationem esse tempora minus cupiditate hic sint ea nihil numquam adipisci dolore obcaecati excepturi blanditiis laboriosam quas cumque reprehenderit aut necessitatibus assumenda veniam magnam, fugit, incidunt deserunt. Voluptas delectus sequi ipsa similique ea officiis aperiam accusantium impedit excepturi quis optio cum aspernatur explicabo obcaecati aliquam consequuntur doloremque odit, quae voluptatum vel exercitationem enim quasi adipisci et! Cupiditate dignissimos aliquid est ratione incidunt similique quisquam! Et eaque delectus quae architecto soluta veritatis veniam quasi iure in? Ad atque culpa non eum inventore autem hic maxime consectetur obcaecati in nulla, maiores ex quam. Natus laudantium modi mollitia fugiat, asperiores eaque a vitae praesentium deserunt! Unde eligendi reprehenderit corrupti velit accusamus at deleniti voluptatibus inventore officia ipsa! Vero non assumenda deleniti voluptate necessitatibus. Cumque excepturi voluptatum maiores aperiam, id ab ipsa, quidem eum fugiat rerum repudiandae nisi. Natus rerum libero quia incidunt quisquam vero, architecto minus harum reiciendis facilis eius explicabo optio qui, neque impedit quidem delectus nemo doloremque? Rerum eius impedit nihil eveniet expedita dicta numquam possimus, nesciunt dolores esse quasi ipsum alias incidunt optio quam ex minus quas quisquam fugit eligendi nemo nam? Quam voluptatibus ab molestiae voluptate perferendis voluptatum ea!
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <div>
+                <h4 id="scrollspyHeading1">First heading</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                    accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                    accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                    accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                    accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                    accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                    accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+                    accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!</p>
+                <h4 id="scrollspyHeading2">Second heading</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!</p>
+                <h4 id="scrollspyHeading3">Third heading</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!</p>
+                <h4 id="scrollspyHeading4">Fourth heading</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!</p>
+                <h4 id="scrollspyHeading5">Fifth heading</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa accusamus sequi recusandae expedita
+                    quo
+                    commodi, et sunt provident, officiis dolor dignissimos molestias, alias quod cum quaerat. Hic
+                    officiis
+                    eos perferendis distinctio? Nihil provident harum consequatur. Dolorem magnam deleniti laudantium
+                    totam
+                    voluptas, unde facilis saepe sint autem beatae facere repellat natus numquam qui perferendis
+                    obcaecati
+                    asperiores vero veritatis. Et nihil accusantium vero a. Labore, ipsum tempora laborum fuga quaerat
+                    commodi esse fugit beatae voluptatem totam repellendus dicta minus asperiores perferendis tempore
+                    quas
+                    quos quae voluptates. Harum repudiandae tenetur facere est quaerat dicta sed odio praesentium
+                    maiores
+                    suscipit, error vitae ad beatae!</p>
             </div>
-        </section>
-        <section>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo odio, at nihil ratione vitae minus nisi saepe,
-            fugiat corrupti eveniet sapiente! Consequuntur quibusdam explicabo dolore veniam corporis, consectetur
-            voluptatem, reiciendis magni saepe odit perspiciatis vero est corrupti officiis autem amet facilis soluta
-            ullam perferendis tenetur pariatur debitis? Ipsa necessitatibus omnis fugiat eum magni eos sit obcaecati,
-            vel rerum tempore saepe nihil deserunt deleniti quae nostrum perferendis blanditiis repudiandae. Fugiat,
-            libero iste? Nesciunt quo eaque id magnam quam, minus laborum obcaecati! Provident consectetur quibusdam
-            tenetur officia quod nesciunt eum at quaerat reiciendis fugit ipsam modi iure, itaque, error illum.
-            Voluptatem, nisi?
-        </section>
-    </main>
+        </main>
+    </div>
     <script src="./src/index.js"></script>
 </body>
 
