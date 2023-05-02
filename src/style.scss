@@ -41,6 +41,26 @@ body {
   background-color: #e1e1e1;
 }
 
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+  cursor: pointer;
+  left: 0;
+  border-radius: 1px;
+  height: 3px;
+  width: 20px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: "";
+}
+.nav-toggle span:before {
+  top: -10px;
+}
+.nav-toggle span:after {
+  bottom: -10px;
+}
+
 header {
   z-index: 2;
   transition: padding 0.3s ease-in-out, background-color 0.1s ease-in-out;
@@ -82,6 +102,15 @@ header {
         }
       }
     }
+    .toggle-btn {
+      .nav-toggle {
+        span,
+        span:before,
+        span:after {
+          background: var(--primary-color);
+        }
+      }
+    }
   }
 }
 
@@ -104,9 +133,12 @@ header {
           color: var(--white-color);
           text-transform: uppercase;
           position: absolute;
-          bottom: 60px;
+          bottom: 18px;
           font-weight: 600;
           font-size: 14px;
+          @include media-breakpoint-down(md) {
+            font-size: 10px;
+          }
         }
       }
     }
@@ -214,8 +246,7 @@ header {
   }
 }
 
-
-.btn-theme{
+.btn-theme {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 600;
@@ -297,8 +328,20 @@ header {
         flex-direction: column;
         font-size: 20px;
         gap: 15px;
+        color: var(--black-color);
+        @include media-breakpoint-down(lg) {
+          min-width: 200px;
+        }
+        @include media-breakpoint-down(md) {
+          min-width: 180px;
+          font-size: 18px;
+        }
+        @include media-breakpoint-down(sm) {
+          min-width: 150px;
+        }
         &.active {
           background: #f0f0f0;
+          color: var(--primary-color);
         }
         &:hover,
         &:focus,
@@ -345,11 +388,11 @@ header {
       max-height: 0;
       transition: all 0.5s ease;
     }
-    a{
+    a {
       color: var(--white-color);
       text-decoration: none;
       transition: all 0.5s ease;
-      &:hover{
+      &:hover {
         color: var(--primary-color);
       }
     }
@@ -369,18 +412,158 @@ header {
   }
 }
 
-footer{
+footer {
   background-color: #f0f0f0;
   font-size: 12px;
-  .footer-border-right{
-    border-right: 1px solid black;
-    height: 100%;
+  .footer-border-right {
+    @include media-breakpoint-up(lg) {
+      border-right: 1px solid #ddd;
+      height: 100%;
+    }
+    &.centered-footer-content {
+      @include media-breakpoint-up(lg) {
+        max-width: 256px;
+        margin: 0 auto;
+      }
+    }
   }
-  .nav-link{
+  .nav-link {
     color: #777;
     text-transform: uppercase;
     font-size: 12px;
     margin-bottom: 8px;
     display: inline-block;
   }
+}
+
+#mouse-scroll {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 1;
+  span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    transform: rotate(45deg);
+    border-right: 2px solid var(--white-color);
+    border-bottom: 2px solid var(--white-color);
+    margin: 0 0 3px 5px;
+  }
+  .mouse {
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border: 2px solid var(--secondary-color);
+    top: 170px;
+  }
+  .down-arrow-1 {
+    margin-top: 6px;
+  }
+  .down-arrow-1,
+  .down-arrow-2,
+  .down-arrow-3 {
+    animation: mouse-scroll 1s infinite;
+  }
+  .down-arrow-1 {
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    -webkit-animation-direction: alternate;
+  }
+  .down-arrow-2 {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-direction: alternate;
+  }
+  .down-arrow-3 {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-dekay: 0.3s;
+    -webkit-animation-direction: alternate;
+  }
+  .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: var(--secondary-color);
+    position: relative;
+  }
+  .mouse-in {
+    -webkit-animation: animated-mouse 1.2s ease infinite;
+    moz-animation: mouse-animated 1.2s ease infinite;
+  }
+}
+@keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#sidebar {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--white-color);
+  padding: 13px 24px;
+  width: 100%;
+  .nav-item {
+    margin-bottom: 15px;
+    .nav-link {
+      color: var(--white-color);
+      padding: 0px;
+      padding-left: 5px;
+      font-size: 18px;
+      display: inline;
+    }
+  }
+  .btn-close {
+    position: relative;
+    background-image: none;
+    opacity: 1;
+    padding: 10px;
+    &::before,
+    &::after {
+      position: absolute;
+      top: 5px;
+      content: " ";
+      height: 25px;
+      width: 2px;
+      background-color: var(--secondary-color);
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.toggle-btn {
+  background-color: transparent !important;
+  width: 25px;
+  border: transparent !important;
 }

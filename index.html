@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Welcome to my static site! Contact us to learn more.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Enter relevant keywords here">
+    <meta name="author" content="Enter your name or organization name here">
     <title>My Static Site</title>
     <link rel="stylesheet" href="./src/style.scss">
 </head>
@@ -12,9 +16,13 @@
     <div class="app" data-bs-spy="scroll" data-bs-target="#homenav" data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
         <header class="position-fixed w-100">
-            <div class="container-lg px-4 px-sm-5">
+            <div class="container-xxl px-4 px-sm-5">
                 <nav id="homenav" class="navbar bg-body-tertiary">
                     <a class="navbar-brand" href="#"><img src="./src/assets/img/Logo.png" alt=""></a>
+                    <button class="btn btn-primary d-block d-sm-none position-relative toggle-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#sidebar" aria-controls="sidebar">
+                        <span class="nav-toggle" href="#"><span></span></span>
+                    </button>
                     <ul class="nav nav-pills d-none d-sm-flex">
                         <li class="nav-item">
                             <a class="nav-link" href="#scrollspy1">Work</a>
@@ -31,6 +39,28 @@
                     </ul>
                 </nav>
             </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+                <div class="d-flex justify-content-between gap-3 align-items-center">
+                    <a class="navbar-brand" href="#"><img src="./src/assets/img/Logo.png" height="50" alt=""></a>
+                    <button type="button " class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspy1">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspy2">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspy3">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspy4">Contact</a>
+                    </li>
+                </ul>
+                <div class="offcanvas-body">
+                </div>
+            </div>
         </header>
         <main>
             <section class="mb-3">
@@ -39,7 +69,7 @@
                         <div class="swiper-slide">
                             <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/TGM.jpeg"
                                 alt="sliderimage">
-                            <div class="container px-5 position-relative img-title-container">
+                            <div class="container-xxl px-4 px-sm-5 position-relative img-title-container">
                                 <label class="slider-img-title">Slider Title 1</label>
                             </div>
                         </div>
@@ -47,14 +77,14 @@
                             <img class="slider-img"
                                 src="https://botvfx.com/wp-content/uploads/2022/07/Boba-Fett-scaled.jpeg"
                                 alt="sliderimage">
-                            <div class="container px-5 position-relative img-title-container">
+                            <div class="container-xxl px-4 px-sm-5 position-relative img-title-container">
                                 <label class="slider-img-title">Slider Title 2</label>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <img class="slider-img" src="https://botvfx.com/wp-content/uploads/2022/07/Loki-scaled.jpeg"
                                 alt="sliderimage">
-                            <div class="container px-5 position-relative img-title-container">
+                            <div class="container-xxl px-4 px-sm-5 position-relative img-title-container">
                                 <label class="slider-img-title">Slider Title 3</label>
                             </div>
                         </div>
@@ -62,12 +92,24 @@
                             <img class="slider-img"
                                 src="https://botvfx.com/wp-content/uploads/2022/07/Dune-2021-scaled.jpeg"
                                 alt="sliderimage">
-                            <div class="container px-5 position-relative img-title-container">
+                            <div class="container-xxl px-4 px-sm-5 position-relative img-title-container">
                                 <label class="slider-img-title">Slider Title 4</label>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-pagination home-slider-pagination"></div>
+                    <a href="#scrollspy1">
+                        <div id="mouse-scroll">
+                            <div class="mouse">
+                                <div class="mouse-in"></div>
+                            </div>
+                            <div>
+                                <span class="down-arrow-1"></span>
+                                <span class="down-arrow-2"></span>
+                                <span class="down-arrow-3"></span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </section>
 
@@ -174,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center gap-3 mt-4">
+                <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
                     <button type="button" class="btn btn-outline-dark btn-theme-outline-dark px-2 py-2">View
                         More</button>
                     <button type="button" class="btn btn-outline-dark btn-theme-outline-dark px-2 py-2">View
@@ -220,7 +262,7 @@
                         </li>
                     </ul>
                     <div class="tab-content py-4 px-4">
-                        <div class="tab-pane container active" id="tab1">
+                        <div class="tab-pane container px-0 active" id="tab1">
                             <div class="min-content-container">
                                 <p> We serve the creatively demanding post-production needs of the film and television
                                     industry globally, serving some of the biggest and smallest production houses, VFX
@@ -230,7 +272,7 @@
                                     the most sophisticated pipelines in the world.</p>
                             </div>
                         </div>
-                        <div class="tab-pane container fade" id="tab2">
+                        <div class="tab-pane container px-0 fade" id="tab2">
                             <div class="min-content-container">
                                 <p> We serve the creatively demanding post-production needs of the film and television
                                     industry globally, serving some of the biggest and smallest production houses, VFX
@@ -240,7 +282,7 @@
                                     the most sophisticated pipelines in the world.</p>
                             </div>
                         </div>
-                        <div class="tab-pane container fade" id="tab3">
+                        <div class="tab-pane container px-0 fade" id="tab3">
                             <div class="min-content-container">
                                 <p>We have nurtured a culture that embraces the fun in everyday things, and that our
                                     team (and many others) recognizes as having a heart. We take our work seriously, but
@@ -270,9 +312,9 @@
 
             <section id="scrollspy3" class="mb-4 scroll-content-area">
                 <h3 class="section-title mb-4 pt-5">Bot <span>Blog</span></h3>
-                <div class="container-lg px-4 px-sm-5">
+                <div class="container-xxl px-4 px-sm-5">
                     <div class="row mx-n2">
-                        <div class="col-md-3 px-2">
+                        <div class="col-sm-6 col-xl-3 px-2">
                             <div class="blog-cards mb-4">
                                 <img src="https://botvfx.com/wp-content/uploads/2023/03/BOT-International-Womens-Day.jpeg"
                                     alt="blog-cards mb-4">
@@ -290,7 +332,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 px-2">
+                        <div class="col-sm-6 col-xl-3 px-2">
                             <div class="blog-cards mb-4">
                                 <img src="https://botvfx.com/wp-content/uploads/2023/03/BOT-International-Womens-Day.jpeg"
                                     alt="blog-cards mb-4">
@@ -308,7 +350,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 px-2">
+                        <div class="col-sm-6 col-xl-3 px-2">
                             <div class="blog-cards mb-4">
                                 <img src="https://botvfx.com/wp-content/uploads/2023/03/BOT-International-Womens-Day.jpeg"
                                     alt="blog-cards mb-4">
@@ -326,7 +368,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 px-2">
+                        <div class="col-sm-6 col-xl-3 px-2">
                             <div class="blog-cards mb-4">
                                 <img src="https://botvfx.com/wp-content/uploads/2023/03/BOT-International-Womens-Day.jpeg"
                                     alt="blog-cards mb-4">
@@ -354,7 +396,7 @@
 
             <section id="scrollspy4" class="mb-5 scroll-content-area">
                 <h3 class="section-title mb-4 pt-4">Contact <span>Us</span></h3>
-                <div class="container-lg px-4 px-sm-5">
+                <div class="container-xxl px-4 px-sm-5">
                     <div class="row justify-content-center">
                         <div class="col-sm-6 text-center">
                             <p>Want to connect with us about a bid?</p>
@@ -368,30 +410,47 @@
         </main>
 
         <footer>
-            <div class="container-lg px-4 px-sm-5 py-5">
+            <div class="container-xxl px-4 px-sm-5 py-5">
                 <div class="row">
-                    <div class="col-3">
-                        <div class="footer-border-right">
+                    <div class="col-12 col-lg-4 col-xl-3">
+                        <div
+                            class="footer-border-right mb-4 d-flex flex-column align-items-center align-items-md-start">
                             <img width="220" src="./src/assets/img/nameboard.png" alt="">
                             <p class="mb-0 mt-3">© 2023 BOT VFX All Rights Reserved.</p>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="footer-border-right">
-                            <p>SITE MAP</p>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="footer-border-right centered-footer-content mb-4">
+                            <p class="fw-bold">SITE MAP</p>
                             <div class="row">
                                 <div class="col-6">
                                     <div><a class="nav-link" href="#scrollspy1">Work</a></div>
-                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
-                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
-                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
+                                    <div><a class="nav-link" href="#scrollspy2">Bot Folio</a></div>
+                                    <div><a class="nav-link" href="#scrollspy3">About</a></div>
+                                    <div><a class="nav-link" href="#scrollspy4">Team</a></div>
                                 </div>
                                 <div class="col-6">
-                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
-                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
-                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
-                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
+                                    <div><a class="nav-link" href="#scrollspy1">Career</a></div>
+                                    <div><a class="nav-link" href="#scrollspy1">Apply Jobs</a></div>
+                                    <div><a class="nav-link" href="#scrollspy1">Blogs</a></div>
+                                    <div><a class="nav-link" href="#scrollspy1">Contact</a></div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="footer-border-right centered-footer-content">
+                            <div class="address-details mb-3">
+                                <p class="mb-2 fw-bold"> ATLANTA (USA)</p>
+                                <p class="mb-0">11475 Great Oaks Way,<br /> Suite 355, Alpharetta, GA 30022</p>
+                            </div>
+                            <div class="address-details mb-3">
+                                <p class="mb-2 fw-bold"> ATLANTA (USA)</p>
+                                <p class="mb-0">11475 Great Oaks Way,<br /> Suite 355, Alpharetta, GA 30022</p>
+                            </div>
+                            <div class="address-details">
+                                <p class="mb-2 fw-bold"> ATLANTA (USA)</p>
+                                <p class="mb-0">11475 Great Oaks Way,<br /> Suite 355, Alpharetta, GA 30022</p>
                             </div>
                         </div>
                     </div>
