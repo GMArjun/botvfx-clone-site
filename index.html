@@ -12,31 +12,28 @@
     <div class="app" data-bs-spy="scroll" data-bs-target="#homenav" data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
         <header class="position-fixed w-100">
-            <div class="container px-5">
+            <div class="container-lg px-4 px-sm-5">
                 <nav id="homenav" class="navbar bg-body-tertiary">
                     <a class="navbar-brand" href="#"><img src="./src/assets/img/Logo.png" alt=""></a>
-                    <ul class="nav nav-pills">
+                    <ul class="nav nav-pills d-none d-sm-flex">
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-offset="500" href="#scrollspy1">Work</a>
+                            <a class="nav-link" href="#scrollspy1">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-offset="100" href="#scrollspy2">About</a>
+                            <a class="nav-link" href="#scrollspy2">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-offset="100" href="#scrollspyHeading3">Careers</a>
+                            <a class="nav-link" href="#scrollspy3">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-offset="100" href="#scrollspyHeading4">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#scrollspyHeading5">Contact</a>
+                            <a class="nav-link" href="#scrollspy4">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <section>
+            <section class="mb-3">
                 <div class="swiper" id="home-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -76,29 +73,32 @@
 
             <section id="scrollspy1" class="scroll-content-area">
                 <h3 class="section-title mb-4 pt-5">OUR <span>WORK</span></h3>
-                <div class="parallax-container">
-                    <div class="parallax-content">
+                <div class="parallax-container py-3">
+                    <div class="parallax-content px-4">
                         <div class="text-center">
                             <p>For over a dozen years, the BOTs have been supporting visual effects work for clients
                                 across the globe.</p>
-                            <button type="button" class="btn btn-outline-light btn-theme-outline-light px-5 py-2">Watch
+                            <button type="button" class="btn btn-outline-light btn-theme-outline-light px-4 py-2">Watch
                                 Showreels</button>
                             <p class="mt-4">Our clients tell us they trust and love us because we “get the sh*t done”
                                 <br /> (we think
                                 they’re saying “shot”, but it kinda sounds like something else).
                             </p>
-                            <button type="button" class="btn btn-outline-light btn-theme-outline-light px-5 py-2">Put
+                            <button type="button" class="btn btn-outline-light btn-theme-outline-light px-4 py-2">Put
                                 the bot work for you</button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section class="mb-3">
                 <div class="text-center py-4">
-                    <h5 class="section-title">Botfolio</h5>
-                    <p class="mb-0">So here’s what we’ve been doing lately. Don’t judge us…well, ok, go ahead and judge
-                        us. </p>
+                    <div class="min-content-container px-4">
+                        <h5 class="section-title">Botfolio</h5>
+                        <p class="mb-0">So here’s what we’ve been doing lately. Don’t judge us…well, ok, go ahead and
+                            judge
+                            us. </p>
+                    </div>
                 </div>
                 <div class="swiper" id="portfolio-slider">
                     <div class="swiper-wrapper">
@@ -182,19 +182,222 @@
                 </div>
             </section>
 
-            <section id="scrollspy2" class="scroll-content-area">
+            <section id="scrollspy2" class="scroll-content-area mb-3">
                 <h3 class="section-title mb-4 pt-5">About <span>Us</span></h3>
-                <div class="parallax-container style-2">
-                    <div class="parallax-content">
+                <div class="parallax-container style-2 py-3">
+                    <div class="parallax-content px-4">
                         <div class="text-center">
                             <h5> It’s not every day that a company that delivers on creativity has scale. And it’s not
                                 every day that such a creative company with scale has a distinct culture and heart.</h5>
                         </div>
                     </div>
                 </div>
+                <div class="min-content-container px-4 mt-3">
+                    <p class="mb-0"> Somehow or the other, with rare exception, one of the elements fades into the
+                        background. Highly
+                        creative companies have that je ne sais quoi, but struggle to scale. Larger companies with
+                        stellar
+                        creative credentials often struggle to reclaim the distinctive culture of their earlier days.
+                        BOT is
+                        the result of a nearly dozen-year struggle to create a company that keeps these forces in
+                        balance:
+                        Creative Chops, Scale, and a Distinctive Culture.</p>
+                </div>
+                <div class="home-tab-container mt-5">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#tab1">
+                                <img src="./src/assets/img/Logo.png" alt="" height="40">
+                                Creative Chops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab2"> <img src="./src/assets/img/Logo.png"
+                                    alt="" height="40">Scale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab3"> <img src="./src/assets/img/Logo.png"
+                                    alt="" height="40">Distinctive Culture</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content py-4 px-4">
+                        <div class="tab-pane container active" id="tab1">
+                            <div class="min-content-container">
+                                <p> We serve the creatively demanding post-production needs of the film and television
+                                    industry globally, serving some of the biggest and smallest production houses, VFX
+                                    facilities and agencies across several continents. We provide services ranging from
+                                    rotoscopy, paint and matchmove to compositing involving CG elements and particle
+                                    effects, and asset development. We work efficiently with clients who have some of
+                                    the most sophisticated pipelines in the world.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="tab2">
+                            <div class="min-content-container">
+                                <p> We serve the creatively demanding post-production needs of the film and television
+                                    industry globally, serving some of the biggest and smallest production houses, VFX
+                                    facilities and agencies across several continents. We provide services ranging from
+                                    rotoscopy, paint and matchmove to compositing involving CG elements and particle
+                                    effects, and asset development. We work efficiently with clients who have some of
+                                    the most sophisticated pipelines in the world.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="tab3">
+                            <div class="min-content-container">
+                                <p>We have nurtured a culture that embraces the fun in everyday things, and that our
+                                    team (and many others) recognizes as having a heart. We take our work seriously, but
+                                    ourselves, not so much. In our pursuit of scale, we have been cautious to avoid
+                                    dulling down the cultural senses. Process, roles, policies and structure are
+                                    necessary to achieve scale, but we make them fit within the context of the heart,
+                                    soul and character of BOT VFX.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark">
+                    <div class="min-content-container p-4">
+                        <p class="text-light">Lord knows it’s been hard. At nearly 500 people strong and growing, we’re
+                            not doing victory laps,
+                            but instead
+                            doubling down on the leadership traits that helped us maintain this balance so far.</p>
+                        <div class="d-flex justify-content-center flex-wrap gap-3">
+                            <button type="button" class="btn btn-outline-light btn-theme-outline-light px-4 py-2">Meet
+                                the Bot Head</button>
+                            <button type="button" class="btn btn-outline-light btn-theme-outline-light px-4 py-2">Read
+                                our History</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="scrollspy3" class="mb-4 scroll-content-area">
+                <h3 class="section-title mb-4 pt-5">Bot <span>Blog</span></h3>
+                <div class="container-lg px-4 px-sm-5">
+                    <div class="row mx-n2">
+                        <div class="col-md-3 px-2">
+                            <div class="blog-cards mb-4">
+                                <img src="https://botvfx.com/wp-content/uploads/2023/03/BOT-International-Womens-Day.jpeg"
+                                    alt="blog-cards mb-4">
+                                <div class="blog-description p-3">
+
+                                    <p class="blog-timestamp mb-1">26 March 2023 | By Bot VFX</p>
+                                    <h5 class="mb-0"> <a href="#">BOT brings in Anoop AK as CIO to Spearhead
+                                            Technological
+                                            Advancements</a> </h5>
+                                    <p class="mb-0 blog-detailed">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Voluptate repellat alias Voluptate repellat alias
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-2">
+                            <div class="blog-cards mb-4">
+                                <img src="https://botvfx.com/wp-content/uploads/2023/03/BOT-International-Womens-Day.jpeg"
+                                    alt="blog-cards mb-4">
+                                <div class="blog-description p-3">
+
+                                    <p class="blog-timestamp mb-1">26 March 2023 | By Bot VFX</p>
+                                    <h5 class="mb-0"> <a href="#">BOT brings in Anoop AK as CIO to Spearhead
+                                            Technological
+                                            Advancements</a> </h5>
+                                    <p class="mb-0 blog-detailed">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Voluptate repellat alias Voluptate repellat alias
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-2">
+                            <div class="blog-cards mb-4">
+                                <img src="https://botvfx.com/wp-content/uploads/2023/03/BOT-International-Womens-Day.jpeg"
+                                    alt="blog-cards mb-4">
+                                <div class="blog-description p-3">
+
+                                    <p class="blog-timestamp mb-1">26 March 2023 | By Bot VFX</p>
+                                    <h5 class="mb-0"> <a href="#">BOT brings in Anoop AK as CIO to Spearhead
+                                            Technological
+                                            Advancements</a> </h5>
+                                    <p class="mb-0 blog-detailed">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Voluptate repellat alias Voluptate repellat alias
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 px-2">
+                            <div class="blog-cards mb-4">
+                                <img src="https://botvfx.com/wp-content/uploads/2023/03/BOT-International-Womens-Day.jpeg"
+                                    alt="blog-cards mb-4">
+                                <div class="blog-description p-3">
+
+                                    <p class="blog-timestamp mb-1">26 March 2023 | By Bot VFX</p>
+                                    <h5 class="mb-0"> <a href="#">BOT brings in Anoop AK as CIO to Spearhead
+                                            Technological
+                                            Advancements</a> </h5>
+                                    <p class="mb-0 blog-detailed">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Voluptate repellat alias Voluptate repellat alias
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-3 mt-4 mb-5">
+                        <button type="button" class="btn btn-outline-dark btn-theme-outline-dark px-2 py-2">View
+                            Blogs</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="scrollspy4" class="mb-5 scroll-content-area">
+                <h3 class="section-title mb-4 pt-4">Contact <span>Us</span></h3>
+                <div class="container-lg px-4 px-sm-5">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 text-center">
+                            <p>Want to connect with us about a bid?</p>
+                            <a href="email:feature.support@botvfx.com">feature.support@botvfx.com</a> &nbsp; |&nbsp;
+                            <a href="email:feature.support@botvfx.com">feature.support@botvfx.com</a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </main>
+
+        <footer>
+            <div class="container-lg px-4 px-sm-5 py-5">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="footer-border-right">
+                            <img width="220" src="./src/assets/img/nameboard.png" alt="">
+                            <p class="mb-0 mt-3">© 2023 BOT VFX All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="footer-border-right">
+                            <p>SITE MAP</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
+                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
+                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
+                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
+                                </div>
+                                <div class="col-6">
+                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
+                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
+                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
+                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="./src/index.js"></script>
 </body>

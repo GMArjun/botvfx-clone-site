@@ -22,4 +22,18 @@ new Swiper("#portfolio-slider", {
     delay: 4000,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    640: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+  },
 });
