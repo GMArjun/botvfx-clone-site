@@ -1,6 +1,6 @@
 import "bootstrap";
 import "./sliders";
-import "./style.scss";
+import "../scss/style.scss";
 
 // Function to Add Scroll Animation to Header
 const navbar = document.querySelector("header");

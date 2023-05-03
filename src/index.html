@@ -9,7 +9,7 @@
     <meta name="keywords" content="Enter relevant keywords here">
     <meta name="author" content="Enter your name or organization name here">
     <title>My Static Site</title>
-    <link rel="stylesheet" href="./src/style.scss">
+    <link rel="stylesheet" href="./scss/style.scss">
 </head>
 
 <body>
@@ -18,44 +18,45 @@
         <header class="position-fixed w-100">
             <div class="container-xxl px-4 px-sm-5">
                 <nav id="homenav" class="navbar bg-body-tertiary">
-                    <a class="navbar-brand" href="#"><img src="./src/assets/img/Logo.png" alt=""></a>
-                    <button class="btn btn-primary d-block d-sm-none position-relative toggle-btn" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#sidebar" aria-controls="sidebar">
-                        <span class="nav-toggle" href="#"><span></span></span>
+                    <a class="navbar-brand" href="#"><img src="./assets/img/Logo.png" alt=""></a>
+                    <button class="btn btn-primary d-block d-sm-none position-relative toggle-btn pe-0" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+                        <img src="./assets/img/menuburger.png" alt="">
                     </button>
                     <ul class="nav nav-pills d-none d-sm-flex">
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspy1">Work</a>
+                            <a class="nav-link" href="#our-work">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspy2">About</a>
+                            <a class="nav-link" href="#about-us">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspy3">Blog</a>
+                            <a class="nav-link" href="#our-blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#scrollspy4">Contact</a>
+                            <a class="nav-link" href="#contact-us">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
                 <div class="d-flex justify-content-between gap-3 align-items-center">
-                    <a class="navbar-brand" href="#"><img src="./src/assets/img/Logo.png" height="50" alt=""></a>
-                    <button type="button " class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <a class="navbar-brand" href="#"><img src="./assets/img/Logo.png" height="50" alt=""></a>
+                    <button type="button " class="btn-close pe-0" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <ul class="nav flex-column mt-4">
                     <li class="nav-item">
-                        <a class="nav-link" href="#scrollspy1">Work</a>
+                        <a class="nav-link" href="#our-work">Work</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#scrollspy2">About</a>
+                        <a class="nav-link" href="#about-us">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#scrollspy3">Blog</a>
+                        <a class="nav-link" href="#our-blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#scrollspy4">Contact</a>
+                        <a class="nav-link" href="#contact-us">Contact</a>
                     </li>
                 </ul>
                 <div class="offcanvas-body">
@@ -98,7 +99,7 @@
                         </div>
                     </div>
                     <div class="swiper-pagination home-slider-pagination"></div>
-                    <a href="#scrollspy1">
+                    <a href="#our-work">
                         <div id="mouse-scroll">
                             <div class="mouse">
                                 <div class="mouse-in"></div>
@@ -113,7 +114,7 @@
                 </div>
             </section>
 
-            <section id="scrollspy1" class="scroll-content-area">
+            <section id="our-work" class="scroll-content-area">
                 <h3 class="section-title mb-4 pt-5">OUR <span>WORK</span></h3>
                 <div class="parallax-container py-3">
                     <div class="parallax-content px-4">
@@ -224,7 +225,7 @@
                 </div>
             </section>
 
-            <section id="scrollspy2" class="scroll-content-area mb-3">
+            <section id="about-us" class="scroll-content-area mb-3">
                 <h3 class="section-title mb-4 pt-5">About <span>Us</span></h3>
                 <div class="parallax-container style-2 py-3">
                     <div class="parallax-content px-4">
@@ -249,15 +250,15 @@
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
                             <a class="nav-link active" data-bs-toggle="tab" href="#tab1">
-                                <img src="./src/assets/img/Logo.png" alt="" height="40">
+                                <img src="./assets/img/Logo.png" alt="" height="40">
                                 Creative Chops</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab2"> <img src="./src/assets/img/Logo.png"
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab2"> <img src="./assets/img/Logo.png"
                                     alt="" height="40">Scale</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab3"> <img src="./src/assets/img/Logo.png"
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab3"> <img src="./assets/img/Logo.png"
                                     alt="" height="40">Distinctive Culture</a>
                         </li>
                     </ul>
@@ -310,7 +311,7 @@
                 </div>
             </section>
 
-            <section id="scrollspy3" class="mb-4 scroll-content-area">
+            <section id="our-blog" class="mb-4 scroll-content-area">
                 <h3 class="section-title mb-4 pt-5">Bot <span>Blog</span></h3>
                 <div class="container-xxl px-4 px-sm-5">
                     <div class="row mx-n2">
@@ -394,7 +395,7 @@
                 </div>
             </section>
 
-            <section id="scrollspy4" class="mb-5 scroll-content-area">
+            <section id="contact-us" class="mb-5 scroll-content-area">
                 <h3 class="section-title mb-4 pt-4">Contact <span>Us</span></h3>
                 <div class="container-xxl px-4 px-sm-5">
                     <div class="row justify-content-center">
@@ -415,7 +416,7 @@
                     <div class="col-12 col-lg-4 col-xl-3">
                         <div
                             class="footer-border-right mb-4 d-flex flex-column align-items-center align-items-md-start">
-                            <img width="220" src="./src/assets/img/nameboard.png" alt="">
+                            <img width="220" src="./assets/img/nameboard.png" alt="">
                             <p class="mb-0 mt-3">© 2023 BOT VFX All Rights Reserved.</p>
                         </div>
                     </div>
@@ -424,16 +425,16 @@
                             <p class="fw-bold">SITE MAP</p>
                             <div class="row">
                                 <div class="col-6">
-                                    <div><a class="nav-link" href="#scrollspy1">Work</a></div>
-                                    <div><a class="nav-link" href="#scrollspy2">Bot Folio</a></div>
-                                    <div><a class="nav-link" href="#scrollspy3">About</a></div>
-                                    <div><a class="nav-link" href="#scrollspy4">Team</a></div>
+                                    <div><a class="nav-link" href="#our-work">Work</a></div>
+                                    <div><a class="nav-link" href="#about-us">Bot Folio</a></div>
+                                    <div><a class="nav-link" href="#our-blog">About</a></div>
+                                    <div><a class="nav-link" href="#contact-us">Team</a></div>
                                 </div>
                                 <div class="col-6">
-                                    <div><a class="nav-link" href="#scrollspy1">Career</a></div>
-                                    <div><a class="nav-link" href="#scrollspy1">Apply Jobs</a></div>
-                                    <div><a class="nav-link" href="#scrollspy1">Blogs</a></div>
-                                    <div><a class="nav-link" href="#scrollspy1">Contact</a></div>
+                                    <div><a class="nav-link" href="#our-work">Career</a></div>
+                                    <div><a class="nav-link" href="#our-work">Apply Jobs</a></div>
+                                    <div><a class="nav-link" href="#our-work">Blogs</a></div>
+                                    <div><a class="nav-link" href="#our-work">Contact</a></div>
                                 </div>
                             </div>
                         </div>
@@ -458,7 +459,7 @@
             </div>
         </footer>
     </div>
-    <script src="./src/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
