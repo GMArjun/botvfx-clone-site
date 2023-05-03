@@ -5,17 +5,20 @@
   --black-color: #000;
 }
 
+$font-family-base: "Montserrat", sans-serif;
 $primary: #87181b;
 $secondary: #f1b71b;
 $enable-negative-margins: true;
 
 @import "~bootstrap/scss/bootstrap";
 @import "~swiper/swiper-bundle.min.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 /* For Firefox */
 /* The first rule targets the scrollbar track, while the second rule targets the thumb */
@@ -72,7 +75,7 @@ header {
     img {
       height: 20px;
       filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(241deg)
-          brightness(101%) contrast(101%);
+        brightness(101%) contrast(101%);
     }
   }
   &.header--scrolled {
@@ -93,7 +96,7 @@ header {
     }
     .toggle-btn {
       img {
-        filter: none
+        filter: none;
       }
     }
   }
@@ -118,11 +121,12 @@ header {
           color: var(--white-color);
           text-transform: uppercase;
           position: absolute;
-          bottom: 18px;
           font-weight: 600;
           font-size: 14px;
+          bottom: 40px;
           @include media-breakpoint-down(md) {
             font-size: 10px;
+            bottom: 18px;
           }
         }
       }
