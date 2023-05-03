@@ -12,6 +12,7 @@ $enable-negative-margins: true;
 
 @import "~bootstrap/scss/bootstrap";
 @import "~swiper/swiper-bundle.min.css";
+@import '~sal.js/dist/sal.css';
 
 html {
   scroll-behavior: smooth;

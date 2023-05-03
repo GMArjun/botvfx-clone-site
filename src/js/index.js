@@ -1,6 +1,12 @@
 import "bootstrap";
+import sal from "sal.js";
 import "./sliders";
 import "../scss/style.scss";
+
+sal({
+  threshold: 1,
+  once: true,
+});
 
 // Function to Add Scroll Animation to Header
 const navbar = document.querySelector("header");
