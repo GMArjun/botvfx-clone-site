@@ -1,4 +1,4 @@
-import "bootstrap";
+import * as bootstrap from "bootstrap";
 import sal from "sal.js";
 import "./sliders";
 import "../scss/style.scss";
@@ -11,6 +11,7 @@ window.addEventListener("load", function () {
   document.body.style.overflow = "auto";
 });
 
+// Initiate Sal Scroll Animation
 sal({
   threshold: 1,
   once: true,
@@ -24,4 +25,25 @@ window.addEventListener("scroll", () => {
   } else {
     navbar.classList.remove("header--scrolled");
   }
+});
+
+// Function to Set Swiper SLider on Home to fit Page Size;
+const windowHeight = window.innerHeight;
+const homeSliderContainer = [
+  ...document.querySelectorAll("#home-slider .swiper-slide"),
+];
+
+homeSliderContainer.forEach((container) => {
+  container.style.height = `${windowHeight}px`;
+});
+
+const sidebarLinks = document.querySelectorAll("#sidebar .nav-link");
+const bsOffcanvas = new bootstrap.Offcanvas("#sidebar");
+
+sidebarLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    setTimeout(() => {
+      bsOffcanvas.hide();
+    }, 800);
+  });
 });

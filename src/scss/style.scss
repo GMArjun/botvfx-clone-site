@@ -154,7 +154,7 @@ header {
         height: 100%;
       }
       .img-title-container {
-        min-height: 100vh;
+        height: 100%;
         width: 100%;
         .slider-img-title {
           color: var(--white-color);
@@ -619,4 +619,8 @@ footer {
       animation-delay: 1.2s;
     }
   }
+}
+
+.offcanvas{
+  transition: none;
 }
