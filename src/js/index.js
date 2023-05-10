@@ -9,6 +9,7 @@ window.addEventListener("load", function () {
   var loader = document.getElementById("loading-indicator");
   loader.style.display = "none";
   document.body.style.overflow = "auto";
+  toggleImgResponsive();
 });
 
 // Initiate Sal Scroll Animation
@@ -63,3 +64,8 @@ liElements.forEach(function(li) {
     li.classList.add("hithere");
   });
 });
+
+
+function toggleImgResponsive() {
+  console.log("hello");
+}
