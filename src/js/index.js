@@ -47,3 +47,19 @@ sidebarLinks.forEach((link) => {
     }, 800);
   });
 });
+
+
+
+const liElements = document.querySelectorAll(".home-tab-container .nav-tabs .nav-item");
+
+liElements.forEach(function(li) {
+  li.addEventListener("click", function() {
+    // Remove "active" class from all li elements
+    liElements.forEach(function(otherLi) {
+      otherLi.classList.remove("hithere");
+    });
+
+    // Add "active" class to the clicked li element
+    li.classList.add("hithere");
+  });
+});

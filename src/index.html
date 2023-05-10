@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="ELECTRIKFX">
     <meta name="author" content="ELECTRIKFX">
-    <meta name="theme-color" content="#87181b" />
+    <meta name="theme-color" content="#d62a28" />
     <title>ELECTRIKFX</title>
     <link rel="icon" href="./assets/img/Logo.ico">
     <link rel="stylesheet" href="./scss/style.scss">
@@ -19,19 +19,7 @@
 
 <body>
     <div id="loading-indicator">
-        <img src="./assets/img/Logo.png" height="50" alt="Important Image" preload>
-        <div class="loading">
-            <div class="loading__letter">L</div>
-            <div class="loading__letter">o</div>
-            <div class="loading__letter">a</div>
-            <div class="loading__letter">d</div>
-            <div class="loading__letter">i</div>
-            <div class="loading__letter">n</div>
-            <div class="loading__letter">g</div>
-            <div class="loading__letter">.</div>
-            <div class="loading__letter">.</div>
-            <div class="loading__letter">.</div>
-        </div>
+        <img src="./assets/img/Logo.png" class="bounce-out-down" height="50" alt="Important Image" preload>
     </div>
     <div class="app" data-bs-spy="scroll" data-bs-target="#homenav" data-bs-root-margin="0px 0px -40%"
         data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
@@ -61,11 +49,11 @@
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
                 <div class="d-flex justify-content-between gap-3 align-items-center">
-                    <a class="navbar-brand" href="#"><img src="./assets/img/Logo.png" height="50" alt=""></a>
+                    <a class="navbar-brand" href="#"><img width="220" src="./assets/img/nameboard.png" alt=""></a>
                     <button type="button " class="btn-close pe-0" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
-                <ul class="nav flex-column mt-4">
+                <ul class="nav flex-column mt-5">
                     <li class="nav-item">
                         <a class="nav-link" href="#our-work">Work</a>
                     </li>
@@ -259,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="min-content-container px-4 mt-3">
+                <div class="container-xxl px-4 px-sm-5 mt-5">
                     <p>We, <span class="fw-bold">ELECTRIKFX</span>, a service provider of Visual Effects for
                         International projects and our services
                         include Roto, Paint, Prep, Camera tracking and Rotomation.</p>
@@ -278,61 +266,92 @@
                     <p>More innovative ideas are in the development stage, and we are in the process of unlocking the
                         maximum potential of business, yet there is no compromise on quality.</p>
                 </div>
-                <div class="home-tab-container mt-5">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#tab1">Paint</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab2"> Prep</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab3"> Roto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab4"> Matchmove</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab5"> Rotomation</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content py-4 px-4">
-                        <div class="tab-pane container px-0 active" id="tab1">
-                            <div class="min-content-container">
-                                <p> Our paint team is skilled in removing unwanted objects and elements from live-action
-                                    footage, fixing continuity errors, and adding or removing textures. Our paint
-                                    services are often used for compositing and clean-up work.</p>
+                <div class="home-tab-container my-5">
+                    <div class="container-xxl px-4 px-sm-5">
+                        <h3 class="section-title mb-4 pt-3">Our <span>Services</span></h3>
+                        <p class="mb-sm-5">Welcome to our VFX services website, where we offer an extensive range of visual effects
+                            solutions for film, television, commercials, and video games. Our team of experienced
+                            artists is dedicated to providing the highest quality work in every aspect of VFX
+                            production.</p>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-xl-5 pe-0 d-flex justify-content-center">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item hithere" data-sal="zoom-in" data-sal-delay="100">
+                                        <a class="nav-link active" data-bs-toggle="tab" href="#tab1">Paint</a>
+                                    </li>
+                                    <li class="nav-item" data-sal="zoom-in" data-sal-delay="150">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#tab2"> Prep</a>
+                                    </li>
+                                    <li class="nav-item" data-sal="zoom-in" data-sal-delay="250">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#tab3"> Roto</a>
+                                    </li>
+                                    <li class="nav-item" data-sal="zoom-in" data-sal-delay="300">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#tab4"> Matchmove</a>
+                                    </li>
+                                    <li class="nav-item" data-sal="zoom-in" data-sal-delay="350">
+                                        <a class="nav-link" data-bs-toggle="tab" href="#tab5"> Rotomation</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="tab-pane container px-0 fade" id="tab2">
-                            <div class="min-content-container">
-                                <p> Our prep team is responsible for preparing footage for compositing. This involves
-                                    cleaning up and enhancing the footage, including color correction, removing unwanted
-                                    elements, and stabilizing footage.</p>
-                            </div>
-                        </div>
-                        <div class="tab-pane container px-0 fade" id="tab3">
-                            <div class="min-content-container">
-                                <p>Roto, short for rotoscoping, is the process of creating a matte or mask around an
-                                    object in live-action footage. Our roto team is skilled in creating precise,
-                                    detailed mattes to allow for accurate compositing of VFX elements into live-action
-                                    footage.</p>
-                            </div>
-                        </div>
-                        <div class="tab-pane container px-0 fade" id="tab4">
-                            <div class="min-content-container">
-                                <p>Matchmoving involves tracking the movement of live-action footage to allow for the
-                                    accurate placement of VFX elements. Our matchmove team is experienced in using both
-                                    2D and 3D tracking methods to ensure seamless integration of VFX into live-action
-                                    footage.</p>
-                            </div>
-                        </div>
-                        <div class="tab-pane container px-0 fade" id="tab5">
-                            <div class="min-content-container">
-                                <p>Rotomation is the process of capturing the movement of a physical object and applying
-                                    it to a digital model. Our rotomation team is skilled in capturing precise movement
-                                    data, which can be used to create realistic animations of digital characters and
-                                    objects.</p>
+                            <div class="col-lg-6 col-xl-7">
+                                <div class="tab-content py-4 px-4 h-100">
+                                    <div class="tab-pane container px-0 active" id="tab1">
+                                        <div class="min-content-container">
+                                            <h3>Paint</h3>
+                                            <p> Our paint team is skilled in removing unwanted objects and elements from
+                                                live-action
+                                                footage, fixing continuity errors, and adding or removing textures. Our
+                                                paint
+                                                services are often used for compositing and clean-up work.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container px-0 fade" id="tab2">
+                                        <div class="min-content-container">
+                                            <h3>Prep</h3>
+                                            <p> Our prep team is responsible for preparing footage for compositing. This
+                                                involves
+                                                cleaning up and enhancing the footage, including color correction,
+                                                removing unwanted
+                                                elements, and stabilizing footage.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container px-0 fade" id="tab3">
+                                        <div class="min-content-container">
+                                            <h3>Roto</h3>
+                                            <p>Roto, short for rotoscoping, is the process of creating a matte or mask
+                                                around an
+                                                object in live-action footage. Our roto team is skilled in creating
+                                                precise,
+                                                detailed mattes to allow for accurate compositing of VFX elements into
+                                                live-action
+                                                footage.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container px-0 fade" id="tab4">
+                                        <div class="min-content-container">
+                                            <h3>Matchmove</h3>
+                                            <p>Matchmoving involves tracking the movement of live-action footage to
+                                                allow for the
+                                                accurate placement of VFX elements. Our matchmove team is experienced in
+                                                using both
+                                                2D and 3D tracking methods to ensure seamless integration of VFX into
+                                                live-action
+                                                footage.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane container px-0 fade" id="tab5">
+                                        <div class="min-content-container">
+                                            <h3>Rotomation</h3>
+                                            <p>Rotomation is the process of capturing the movement of a physical object
+                                                and applying
+                                                it to a digital model. Our rotomation team is skilled in capturing
+                                                precise movement
+                                                data, which can be used to create realistic animations of digital
+                                                characters and
+                                                objects.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -486,16 +505,9 @@
                     <div class="col-sm-6 col-lg-4 col-xl-3">
                         <div class="footer-border-right centered-footer-content">
                             <div class="address-details mb-3">
-                                <p class="mb-2 fw-bold"> ATLANTA (USA)</p>
-                                <p class="mb-0">11475 Great Oaks Way,<br /> Suite 355, Alpharetta, GA 30022</p>
-                            </div>
-                            <div class="address-details mb-3">
-                                <p class="mb-2 fw-bold"> ATLANTA (USA)</p>
-                                <p class="mb-0">11475 Great Oaks Way,<br /> Suite 355, Alpharetta, GA 30022</p>
-                            </div>
-                            <div class="address-details">
-                                <p class="mb-2 fw-bold"> ATLANTA (USA)</p>
-                                <p class="mb-0">11475 Great Oaks Way,<br /> Suite 355, Alpharetta, GA 30022</p>
+                                <p class="mb-2 fw-bold"> India</p>
+                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                    officiis.<br /> Suite 355, Alpharetta, TN 625007</p>
                             </div>
                         </div>
                     </div>
