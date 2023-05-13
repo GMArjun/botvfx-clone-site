@@ -26,7 +26,9 @@
         <header class="position-fixed w-100">
             <div class="container-xxl px-4 px-sm-5">
                 <nav id="homenav" class="navbar bg-body-tertiary">
-                    <a class="navbar-brand" href="#"><img src="./assets/img/Logo.png" alt=""></a>
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/Logo.png" class="def-logo" alt="logo">
+                        <img width="220" src="./assets/img/nameboard.png" class="scroll-logo" alt="logo"></a>
                     <button class="btn btn-primary d-block d-sm-none position-relative toggle-btn pe-0" type="button"
                         data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
                         <img src="./assets/img/menuburger.png" alt="">
@@ -37,6 +39,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#our-blog">Blog</a>
@@ -59,6 +64,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about-us">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#our-blog">Blog</a>
@@ -160,7 +168,7 @@
             <section class="mb-3">
                 <div class="text-center py-4">
                     <div class="min-content-container px-4">
-                        <h5 class="section-title">Botfolio</h5>
+                        <h5 class="section-title">Portfolio</h5>
                         <p class="mb-0">So here’s what we’ve been doing lately. Don’t judge us…well, ok, go ahead and
                             judge
                             us. </p>
@@ -277,6 +285,9 @@
                     <p>More innovative ideas are in the development stage, and we are in the process of unlocking the
                         maximum potential of business, yet there is no compromise on quality.</p>
                 </div>
+            </section>
+
+            <section id="services" class="scroll-content-area mb-3">
                 <div class="home-tab-container my-5">
                     <div class="container-xxl px-4 px-sm-5">
                         <h3 class="section-title mb-4 pt-3">Our <span>Services</span></h3>
@@ -501,15 +512,21 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div><a class="nav-link" href="#our-work">Work</a></div>
-                                    <div><a class="nav-link" href="#about-us">Bot Folio</a></div>
-                                    <div><a class="nav-link" href="#our-blog">About</a></div>
-                                    <div><a class="nav-link" href="#contact-us">Team</a></div>
+                                    <div><a class="nav-link" href="#our-work">Porfolio</a></div>
+                                    <div><a class="nav-link" href="#about-us">About</a></div>
+                                    <div><a class="nav-link" href="#services">Services</a></div>
+                                    <div><a class="nav-link" href="#our-blog">Blog</a></div>
+                                    <div><a class="nav-link" href="#contact-us">Contact</a></div>
                                 </div>
                                 <div class="col-6">
-                                    <div><a class="nav-link" href="#our-work">Career</a></div>
-                                    <div><a class="nav-link" href="#our-work">Apply Jobs</a></div>
-                                    <div><a class="nav-link" href="#our-work">Blogs</a></div>
-                                    <div><a class="nav-link" href="#our-work">Contact</a></div>
+                                    <div><a class="nav-link" data-bs-toggle="modal" data-bs-target="#comingsoon"
+                                            href="#our-work">Career</a></div>
+                                    <div><a class="nav-link" data-bs-toggle="modal" data-bs-target="#comingsoon"
+                                            href="#our-work">Apply Jobs</a></div>
+                                    <div><a class="nav-link" data-bs-toggle="modal" data-bs-target="#comingsoon"
+                                            href="#our-work">Blogs</a></div>
+                                    <div><a class="nav-link" data-bs-toggle="modal" data-bs-target="#comingsoon"
+                                            href="#our-work">Contact</a></div>
                                 </div>
                             </div>
                         </div>
@@ -526,6 +543,20 @@
                 </div>
             </div>
         </footer>
+
+
+        <div class="modal fade" id="comingsoon" tabindex="-1" aria-labelledby="comingsoonLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content py-4">
+                    <div class="modal-body">
+                        <h3 class="text-center mb-0">COMING SOON</h3>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center border-0">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn btn-primary" style="width: 120px">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./js/index.js"></script>
 </body>

@@ -5,6 +5,10 @@ new Swiper("#home-slider", {
   grabCursor: true,
   effect: "fade",
   lazy: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 
   // If we need pagination
   pagination: {
