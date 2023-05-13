@@ -1,0 +1,5 @@
+To Generate the Build -> 
+
+1. Install Node Modules,  Run ->  npm install
+2. To Run the Build, Run -> npm run dev
+3. To Take Build for Production, Run -> npm run build
