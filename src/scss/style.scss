@@ -725,3 +725,12 @@ footer {
     display: block;
   }
 }
+
+.modal-content{
+  background-color: var(--black-color);
+  border: 1px solid var(--white-color);
+}
+
+.modal-backdrop{
+  opacity: 0.96 !important;
+}
