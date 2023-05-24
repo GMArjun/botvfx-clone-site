@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'Agency';
-  src: url('../assets/fonts/agency/AGENCYR.TTF') format('truetype');
+  font-family: "Agency";
+  src: url("../assets/fonts/agency/AGENCYR.TTF") format("truetype");
 }
 
 $font-family-base: "Agency", "Montserrat", sans-serif;
@@ -357,7 +357,6 @@ header {
 .home-tab-container {
   display: flex;
   .nav-tabs {
-    left: 35px;
     justify-content: center;
     border: none;
     position: relative;
@@ -373,7 +372,6 @@ header {
       margin-bottom: 40px;
       height: 100%;
       width: 100%;
-      left: 0px;
       gap: 15px;
     }
     .nav-item {
@@ -384,42 +382,57 @@ header {
         z-index: 1;
       }
       &:first-child {
-        left: 0px;
-        top: 103px;
+        left: 23px;
+        top: 30px;
         .nav-link {
           background-color: #cadcf8;
         }
       }
       &:nth-child(2) {
-        top: 0px;
-        left: 67px;
+        top: -13px;
+        left: 142px;
         .nav-link {
           background-color: #caf8df;
         }
       }
       &:nth-child(3) {
-        right: 85px;
-        top: 52px;
+        right: 17px;
+        top: 98px;
         .nav-link {
           background-color: #f8d9ca;
         }
       }
       &:nth-child(4) {
-        bottom: 3px;
-        left: 46px;
+        bottom: 70px;
+        left: 0px;
         .nav-link {
           background-color: #f5f5dc;
         }
       }
       &:nth-child(5) {
-        right: 72px;
-        bottom: 32px;
+        right: 45px;
+        bottom: 5px;
         .nav-link {
           background-color: #f8cadb;
         }
       }
       &:nth-child(6) {
-        top: 170px;
+        top: 237px;
+        left: 94px;
+        .nav-link {
+          background-color: #f3e8ff;
+        }
+      }
+      &:nth-child(7) {
+        top: 124px;
+        left: 140px;
+        animation: none !important;
+        .nav-link {
+          min-width: 130px !important;
+          min-height: 130px !important;
+          border-radius: 8px;
+          background-color: var(--black-color);
+        }
       }
       .nav-link {
         min-width: 160px;
@@ -442,7 +455,7 @@ header {
         &.active {
           background: var(--primary-color) !important;
           color: var(--white-color);
-          font-weight: 500;
+          font-weight: bold;
         }
         &:hover,
         &:focus,
@@ -620,7 +633,7 @@ footer {
     .nav-link {
       color: var(--white-color);
       padding: 0px;
-      font-weight: 500;
+      font-weight: bold;
       padding-left: 5px;
       font-size: 20px;
       display: inline;
@@ -731,15 +744,19 @@ footer {
   }
 }
 
-.modal-content{
+.modal-content {
   background-color: var(--black-color);
   border: 1px solid var(--white-color);
 }
 
-.modal-backdrop{
+.modal-backdrop {
   opacity: 0.96 !important;
 }
 
 .address-details {
   font-size: 16px;
+}
+
+.text-justify {
+  text-align: justify;
 }
